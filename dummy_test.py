@@ -3,10 +3,14 @@
 import unittest
 
 
+def my_test_function(n):
+    return n
+
+
 class TestCase(unittest.TestCase):
     # @unittest.skip
-    def test_highest_prime_factor(self):
-        self.assertEqual(my_test_function(x), y)  # [2, 13]
+    def test_my_test(self):
+        self.assertEqual(my_test_function(n), n)
 
 
 unittest.main()
